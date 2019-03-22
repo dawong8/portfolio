@@ -1,20 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Poiret+One|Quicksand|Over+the+Rainbow');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Quicksand|Open+Sans+Condensed:300');
 
-/*
+@font-face {
+  font-family: myFirstFont;
+  src: url('./public/Smoothie Shoppe.ttf');
+}
 
-font-family: 'Quicksand', sans-serif;
-font-family: 'Poiret One', cursive;
 
-*/
 
 * {
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
+
 }
 
 body {
 	background: white;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 
@@ -44,16 +46,205 @@ body {
 
 
 
+
+.hide {
+	display: none;
+}
+
+/* home page */
+
+.home{
+	height: 100vh;
+	width: 100%;
+	background: #e6f0fa;
+	z-index: 1;
+}
+
+.profile-pic {
+	margin-top: 100px;
+	width: 25%;
+}
 .title {
-	margin-top: 30%;
-	margin-bottom: 50px;
-	font-weight: bold;
-	font-family: 'Over the Rainbow', cursive;
-	color: black;
+
+	font-family: myFirstFont;
+	color: #454545;
+	font-size: 45px;
+
 
 }
 
-.projects {
-	background: url('./public/background.png');
+
+
+/* nav bar */
+
+.nav {
+	position: fixed;
+	background: #454545;
+	width: 100%;
+	height: 5%;
+	text-align: center;
+	z-index: 99;
+	padding-top: 1%;
+}
+
+.nav a {
+	text-decoration: none;
+	padding: 1%;
+	color: white;
+}
+a:hover {
+	color: lightcoral;
+}
+
+a:visted {
+	color: black;
+}
+
+/* footer */
+
+.footer {
+	bottom: 0;
+	background: #454545;
+	height: 20px;
+	text-align: center;
+	color: white;
+	padding: 1%;
+}
+
+.footer-icon {
+	width: 3%;
+}
+
+
+
+/* rain animation */
+.rain {
+	position: relative;
+	opacity: 0.5;
+	z-index: 2;
+}
+
+#invi {
+	height: 0;
+	width: 1200px;
+}
+
+/* about */
+
+.about-section {
+	background: white;
+	font-size: 20px;
+	text-align: center;
+	padding: 5%;
+	height: 550px;
+
+}
+
+
+
+.about-me {
+	text-align: center;
+	margin: 2% 10%;
+}
+
+
+h4 {
+	color: lightcoral;
+
+}
+
+.border {
+	border-right: solid 1px lightgrey;
+}
+
+
+.practical {
+	color: steelblue;
+}
+
+.theory {
+	color: violet;
+}
+
+
+
+
+/* projects */
+
+
+.project {
+	background: #d9ffce;
 	height: 100vh;
+}
+
+.project-title{
+	margin-top: 75px;
+}
+
+.project-title h2 {
+	color: grey;
+}
+
+
+
+.project-listing {
+	padding: 1% 15%;
+}
+
+
+.project-item {
+	position: relative;
+}
+
+.project-item img {
+	width:97%;
+	border: 2px solid white;
+	border-radius: 45px;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	width:100%;
+	border-radius: 45px;
+
+	opacity: 0;
+
+	transition: .5s ease;
+	background-color: #ffe7e7;
+}
+
+.project-item:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.icon {
+	border: none !important;
+	width: 15% !important;
+}
+
+
+.icon:hover, .footer-icon:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+a {
+	text-decoration-line: none;
 }
