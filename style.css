@@ -73,6 +73,14 @@ body {
 
 }
 
+@media only screen and (max-width: 1000px) {
+ 	 .profile-pic {
+ 	 	width: 300px;
+ 	 }
+ 	 .home {
+ 	 	height: 700px;
+ 	 }
+}
 
 
 /* nav bar */
@@ -100,6 +108,13 @@ a:visted {
 	color: black;
 }
 
+@media only screen and (max-height: 500px) {
+ 	 .nav {
+ 	 	height: 25px;
+ 	 }
+
+}
+
 /* footer */
 
 .footer {
@@ -116,18 +131,6 @@ a:visted {
 }
 
 
-
-/* rain animation */
-.rain {
-	position: relative;
-	opacity: 0.5;
-	z-index: 2;
-}
-
-#invi {
-	height: 0;
-	width: 1200px;
-}
 
 /* about */
 
@@ -168,7 +171,20 @@ h4 {
 
 
 
-
+@media only screen and (max-width: 800px) {
+	.about-section {
+		height: 140vh;
+	}
+	.skills-panel{
+		width: 100%;
+	}
+	.about-panel {
+		width: 100%;
+	}
+	.border {
+		border-right: none;
+	}
+}
 /* projects */
 
 
@@ -248,3 +264,57 @@ h4 {
 a {
 	text-decoration-line: none;
 }
+
+.mystery {
+	display: none;
+}
+
+@media only screen and (max-width: 1150px) {
+	.project {
+		height: 200vh;
+	}
+	.project-item {
+		width: 50%;
+	}
+	.mystery {
+		visibility: hidden;
+		display: block;
+	}
+	.project-listing {
+		padding: 1% 5%;
+	}
+
+}
+@media only screen and (max-width: 900px) {
+	.project {
+		height: 180vh;
+	}
+}
+
+@media only screen and (max-width: 790px) {
+	.project {
+		height: 150vh;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.project-item {
+		width: 100%;
+	}
+	.project {
+		height: 370vh;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.project {
+		height: 350vh;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.project {
+		height: 230vh;
+	}
+}
+
