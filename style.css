@@ -118,16 +118,15 @@ a:visted {
 /* footer */
 
 .footer {
-	bottom: 0;
-	background: #454545;
-	height: 20px;
 	text-align: center;
 	color: white;
+	margin-top: 30px;
 	padding: 1%;
+	background: #454545;
 }
 
-.footer-icon {
-	width: 3%;
+.footer a {
+	color: pink;
 }
 
 
@@ -135,12 +134,10 @@ a:visted {
 /* about */
 
 .about-section {
-	background: white;
 	font-size: 20px;
 	text-align: center;
 	padding: 5%;
-	height: 550px;
-
+	height: 100%;
 }
 
 
@@ -170,11 +167,13 @@ h4 {
 }
 
 
+.about-panel, .skills-panel {
+	background: white;
+	height: 100%;
+}
 
 @media only screen and (max-width: 800px) {
-	.about-section {
-		height: 140vh;
-	}
+
 	.skills-panel{
 		width: 100%;
 	}
@@ -188,17 +187,14 @@ h4 {
 /* projects */
 
 
-.project {
-	background: #d9ffce;
-	height: 100vh;
-}
+
 
 .project-title{
 	margin-top: 75px;
 }
 
 .project-title h2 {
-	color: grey;
+	color: black;
 }
 
 
